@@ -1,0 +1,578 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+
+html, body {
+
+	background: #2c1641;
+	font-family: Poppins,sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.15;
+
+}
+
+nav {
+	/*background: rgba(255,255,255,.3);*/
+
+
+	
+	color: #fff;
+	width: 94%;
+	height: 62px;
+	margin: 0;
+	padding: 0 3%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: Muli,sans-serif;
+	position: fixed;
+	justify-content: flex-end;
+	z-index: 100;
+}
+
+/**/
+.logo {
+	position: absolute;
+	left: 20px;
+	align-items: center;
+	margin: 5px;
+	transform: scale(0.9);
+
+}
+.boton-on{
+	width: 18px;
+	height: 20px;
+	border: solid 2px #efefef;
+	border-radius: 50%;
+	padding: 5px;
+	cursor: pointer;
+	margin: 30px;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.boton-on span {
+	width: 5px;
+	height: 5px;
+	background: #00fff7;
+	border-radius: 50%;
+	margin: 5px;
+	cursor: pointer;
+
+	
+}
+
+.titulo-boton-on{
+	position: absolute;
+	right: 145px;
+	text-align: center;
+	color: white;
+	font-size: .8125rem;
+	text-transform: uppercase;
+	font-weight: 700;
+
+
+}
+.titulo-boton-on strong{
+
+	color: #00fff7;
+}
+
+
+/**/
+/*HAMBURGUESA BOTON INICIO*/
+.boton-nav{
+	width: 18px;
+	height: 20px;
+	border: solid 1px #efefef;
+	border-radius: 50%;
+	padding: 5px;
+	cursor: pointer;
+	background: #FFF;
+	display: flex;
+	box-align: center;
+	align-items: center;
+	box-orient: vertical;
+	box-direction: normal;
+	flex-direction: column;
+	flex-align: center;
+	justify-content: space-around;
+
+
+	
+}
+
+.cerrado .radar{
+
+	
+	justify-content: flex-end;
+   	border-radius: 50%;
+   	border: 2px solid #fff;
+   	width: 45px;
+   	height: 45px;
+   	animation: radar 2s infinite;
+    opacity: 0;
+    position: absolute;
+}
+
+@keyframes radar{
+0%{
+    width:18px;
+    height:20px;
+    border:1px 
+    solid #fff;
+    opacity:0
+}50%{
+    opacity:.1
+}
+90%{
+    width:45px;
+    height:47px
+}
+90%,100%{
+    border:2px 
+    solid #fff;
+    opacity:0
+}100%{
+    width:75px;
+    height:77px
+}
+
+}
+
+.radar:nth-child(2) {
+    animation-delay: .4s;
+}
+.radar:nth-child(3) {
+    animation-delay: .11s;
+}
+.radar:nth-child(4) {
+    animation-delay: .20s;
+}
+
+.boton-nav span {
+	width: 18px;
+	height: 2px;
+	background: #2f1a45;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-top: 1px;
+}
+
+
+
+
+
+.cerrado span:nth-child(2) {
+
+	background:  #FFF;
+	transform: translateX(60px);
+	opacity: .0
+}
+.cerrado span:nth-child(1) {
+
+	transform: rotate(-45deg)translate(-3px, 3px);
+}
+
+.cerrado span:nth-child(3) {
+	transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/*HAMBURGUESA BOTON FIN*/
+
+/*Contenido */
+
+
+.container {
+
+	display: grid;
+	width: 100%;
+	height: 600px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 100%;
+	align-content: center;
+
+}
+
+.right{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.left{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+
+
+
+}
+
+.left span {
+	color: #FFF;
+}
+
+
+/*fin contenido*/
+
+.imagen-right {
+	width: 120%;
+	position: relative;
+	right: 60px;
+	bottom: 60px;
+
+
+}
+
+.imagen-dos{
+	width: 100%;
+	position: relative;
+	bottom: 60px;
+	
+}
+
+
+.imagen-tres{
+	width: 90%;
+	position: relative;
+	transform: scale(1.3);
+	right: 40px;
+	bottom: -70px;
+}
+
+.grid-elemet{
+	padding: 20px;
+	display: grid;
+
+}
+
+
+
+.banner{
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 2rem;
+	line-height: .9;
+	max-width: 300px;
+	width: 100%;
+
+
+
+}	
+.separador{
+	width: 60px;
+	height: 3px;
+	background: #FFF;
+	margin: 10px;
+	margin-left: 0;
+}
+
+h2 {
+
+	font-family: Muli,sans-serif;
+	color: #fff;
+	font-weight: 400;
+	font-size: 1rem;
+	width: 177px;
+
+}
+h5 {
+	font-family: Muli,sans-serif;
+	color: #fff;
+
+}
+.boton-color {
+	margin-top: 10px;
+	max-width: 150px;
+	height: 55px;
+	
+	border-radius: 10px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	animation-duration: 5s;
+	animation: boton-color infinite 8s linear;
+	transition: 5s ease-in-out; 
+
+
+}
+
+
+.button{
+
+	width: 146px;
+	height: 50px;
+	background: #2c1641;
+	border-radius: 10px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	cursor: pointer;
+
+}
+.button:hover{
+
+	background: #00fff7;
+	
+}
+
+.button:hover h5{
+
+	color: #2c1641;
+}
+
+.centrar-icon{
+	display: flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.icono {
+	width: 50px;
+	height: 50px;
+	color: rgba(255,255,255,.5);
+	margin-top: -180px;
+	bottom: 50px;
+	animation: icono infinite 3s linear;
+
+}
+
+/*animacion del icono flecha hacia abajo*/
+@keyframes icono{
+	from {transform: translateY(0px);}
+	to {transform: translateY(50px);
+		opacity: 0;
+	}
+} 
+
+
+/*animacion del boton*/
+
+
+@keyframes boton-color{
+	from{ background: linear-gradient(60deg,#98288f,#d88ee0,#8785f2,#00fff7); 
+
+		transition: 5s ease-in-out; }
+		to{
+
+			background: #8A2387;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to left, #f27121a1, #d88ee0, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to left, #f27121a1, #d88ee0, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+			transition: 5s ease-in-out; 
+		}
+
+	}
+	/*fin de las animaciones */
+
+
+	/*hamburgues click ininio del menu de navegacin*/
+
+
+
+
+	.mostrar{
+		background: linear-gradient(60deg,#98288f,#54317a);
+		opacity:.9;
+		transform: translate(800px, -800px);
+		width: 100%;
+		height: 100vh;
+		color: #FFF;
+		position: fixed;
+
+		z-index: 10;
+	}
+
+
+	.close {
+		transform: translate3d(0, 0, 0);
+
+	}
+
+	.menu-nav {
+
+		text-align: center;
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		cursor: pointer;
+		list-style: none;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		display: grid;
+		margin-top: 70px;
+		font-weight: bold;
+		line-height: .7;
+	}
+
+	.menu-nav li{
+		text-transform: uppercase;
+		z-index: 3;
+		margin: 20px;
+		transition: 5s ease-in-out;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		font-size: 3rem;
+		font-weight: Black;
+		line-height: .7;
+		letter-spacing: -2px;
+		justify-content: center;
+		text-align: center;
+		display: flex;
+	}
+
+	.menu-nav li:before{
+		border-radius: 15px;
+		content: '';
+		width: 0;
+		height: 6px;
+		background: linear-gradient(60deg,#98288f,#d88ee0,#8785f2,#00fff7);
+		transition: 1s ease-in-out;
+		position: absolute;
+		transform: width;
+		visibility: hidden;
+		justify-content: center;
+		text-align: center;
+
+		left: 40%;
+
+	}
+
+
+	.menu-nav li:hover:before{
+
+		visibility: visible;
+		width: 181px;
+
+
+	}
+
+
+	.menu-nav ul a{
+		cursor: pointer;
+	}
+
+
+
+	.color {
+		color: #00fff7;
+	}
+
+	.mostrar a small {
+
+		bottom: 10px;
+	}
+
+	small {
+		font-size: 1rem;
+	}
+
+	small:nth-child(2){
+		opacity: .5;
+	}
+
+	/*fin del menu de navegacin*/
+
+	/*iconnos List navegation*/
+
+	.iconos-list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 15px;
+		cursor: pointer;
+
+	}
+
+
+	.iconos-list a{
+
+		border-radius: 50%;
+		padding: 10px;
+		width: 50px:
+		height:50px;
+		background: #FFF;
+		color: #54317a;
+		margin: 5px; 
+		transition: 1s all;	
+
+
+	}
+
+	.iconos-list a:hover{
+		transform: translateY(-15px);
+	}
+
+	/**slider*/
+
+	.right-list a{
+		color: #FFF;
+		width: 35px;
+		height: 35px;
+		margin-right: 35px;
+		list-style: none;
+	}
+
+	.right-list ul{
+
+		list-style: none;
+
+
+	}
+	.right-list ul li{
+		list-style: none;
+
+		margin-top: 25px;
+	}
+	.right-list{
+
+		display: flex;
+		justify-content: flex-end;
+		position: absolute;
+		right: -2px;
+		top: 30%;
+		z-index: 100;
+	}
+
+	.right-list span
+	{
+		padding: 2px;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		/* border: 2px solid #FFF; */
+		background: #FFF; 
+		position: absolute;
+		/*border: 1px solid #FFF;*/
+	}
+/*.radar{
+
+	position: absolute;
+	justify-content: flex-end;
+   	border-radius: 50%;
+   	border: 2px solid #fff;
+   	width: 45px;
+   	height: 45px;
+   	animation: radar 2s infinite;
+    opacity: 0;
+}*/
+
