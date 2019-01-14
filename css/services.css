@@ -232,9 +232,9 @@
 .card__locacion{
 	width: 100%;
 	height: 100%;
-padding: 0;
-margin: 0;
-top: 0;
+	padding: 0;
+	margin: 0;
+	top: 0;
 
 	
 	grid-template-columns: repeat(1,1fr);
@@ -318,22 +318,22 @@ top: 0;
 
 .contenido-weare p{
 
-	    padding: 50px 56px;
-    text-align: justify;
-    font-size: 1.7rem;
-    user-select: none;
+	padding: 50px 56px;
+	text-align: justify;
+	font-size: 1.7rem;
+	user-select: none;
 }
 
 .boton-weare{
 
 	position: absolute;
-	    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 50px;
-    left: 35%;
-    
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 50px;
+	left: 35%;
+
 }
 
 /*Slide -- */
@@ -368,47 +368,106 @@ top: 0;
 	color: #FFF;
 	right:5px;
 	margin-top: 100px;
-	  
- 	justify-content: center;
- 	text-align: center;
- 	user-select: none;
-    line-height: .8;
-    font-weight: 900;
-    letter-spacing: 25px;
-    font-size: 4rem;
-    text-transform: uppercase;
+
+	justify-content: center;
+	text-align: center;
+	user-select: none;
+	line-height: .8;
+	font-weight: 900;
+	letter-spacing: 25px;
+	font-size: 4rem;
+	text-transform: uppercase;
 }
 
 /*footer*/
 
 .gridmain{
 
-width: 100%;
-height: 400px;
-display: grid;
-grid-template-columns:repeat(1,1fr);
-grid-template-rows: repeat(2,1fr);
+	width: 100%;
+	height: 400px;
+	display: grid;
+	grid-template-columns:repeat(1,1fr);
+	grid-template-rows: repeat(2,1fr);
 
 
 }
 
 .partetop{
-	background: #FFF;
-	display: grid;
-	grid-template-columns: repeat(4,1fr);
-  padding: 30px 0;
+display: grid;
+grid-template-columns:20% 40% 40%;
+grid-template-rows: repeat(1,1fr);
+justify-content: center;
+align-items: center;
+color: #FFF;
+background:#FFF;
+	
 }
 
 .partetop a img{
+	float: right;
 	justify-content: center;
 	align-items: center;
-  padding: 30px 0;
+	display: flex;
+	padding: 30px 0;
 	width: 50%;
 	height: 50px;
 }
 
+.partetop h1{
+
+	color: #2f1a45;
+	float: left;
+	margin-left: 80%;
+	
+}
+
 .partedown{
-	background: #41255b;
+	background: #2f1a45;
 	border-top: 5px solid #00fff7;
+}
+
+
+.partedown{
+	display: grid;
+    grid-template-columns:repeat(1);
+	grid-template-rows: repeat(3);
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+
+
+}
+
+.partedown span{	
+
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:#FFF;
+	font-size: 10px;
+	text-transform: capitalize;
+}
+
+.partedown li{
+	list-style: none;
+	color:#FFF;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	text-transform: capitalize;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.partedown li:hover{
+	color: #00fff7;
+
+}
+.partedown .color-li li{
+	color: #00fff7;
 }
 
